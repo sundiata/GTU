@@ -128,3 +128,121 @@
 
 
 
+$(document).ready(function(){
+    $('.testimonial-carousells').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            768:{
+                items: 2
+            },
+            992:{
+                items: 3
+            }
+        }
+    });
+});
+
+
+(function() {
+    emailjs.init("keitajato30@gmail.com");
+})();
+
+
+
+
+function sendEmail(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('mail').value;
+    const mobile = document.getElementById('mobile').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Prepare email parameters
+    const params = {
+        to_email: 'keitajato30@gmail.com', // Receiver's email address
+        from_name: name,
+        from_email: email,
+        from_mobile: mobile,
+        subject: subject,
+        message: message
+    };
+
+    // Send email using email.js
+    emailjs.send("service_xxxxxxx", "template_xxxxxxx", params) // Replace with your actual Service ID and Template ID
+        .then(function(response) {
+            console.log('Email sent successfully!', response);
+            // Optionally, show a success message using SweetAlert2 or other method
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'Your message has been sent.',
+            });
+            // Clear form fields
+            document.getElementById('contactForm').reset();
+        }, function(error) {
+            console.error('Error sending email:', error);
+            // Optionally, show an error message using SweetAlert2 or other method
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong! Please try again later.',
+            });
+        });
+}
+
+
+
+
+
+$(document).ready(function(){
+    $('.partners-slider-s3').slick({
+        slidesToShow: 4, // Adjust the number of images shown per slide as needed
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        dots: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+});
