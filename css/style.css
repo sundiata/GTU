@@ -789,3 +789,12 @@ p {
 .slick-slide {
     padding: 0 10px;
 }
+
+
+.team-item {
+    margin: 20px;
+}
+.team-social .btn {
+    color: #fff;
+    background-color: #007bff;
+}

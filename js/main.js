@@ -152,55 +152,98 @@ $(document).ready(function(){
 });
 
 
-(function() {
-    emailjs.init("keitajato30@gmail.com");
-})();
+// (function() {
+//     emailjs.init("service_rrvovzs");
+// })();
 
 
 
 
-function sendEmail(event) {
-    event.preventDefault(); // Prevent default form submission
+// function sendEmail(event) {
+//     event.preventDefault(); // Prevent default form submission
 
-    // Get form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('mail').value;
-    const mobile = document.getElementById('mobile').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+//     // Get form data
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('mail').value;
+//     const mobile = document.getElementById('mobile').value;
+//     const subject = document.getElementById('subject').value;
+//     const message = document.getElementById('message').value;
 
-    // Prepare email parameters
-    const params = {
-        to_email: 'keitajato30@gmail.com', // Receiver's email address
-        from_name: name,
-        from_email: email,
-        from_mobile: mobile,
-        subject: subject,
-        message: message
-    };
+//     // Prepare email parameters
+//     const params = {
+//         to_email: 'keitajato30@gmail.com', // Receiver's email address
+//         from_name: name,
+//         from_email: email,
+//         from_mobile: mobile,
+//         subject: subject,
+//         message: message
+//     };
 
-    // Send email using email.js
-    emailjs.send("service_xxxxxxx", "template_xxxxxxx", params) // Replace with your actual Service ID and Template ID
-        .then(function(response) {
-            console.log('Email sent successfully!', response);
-            // Optionally, show a success message using SweetAlert2 or other method
-            Swal.fire({
-                icon: 'success',
-                title: 'Success!',
-                text: 'Your message has been sent.',
-            });
-            // Clear form fields
-            document.getElementById('contactForm').reset();
-        }, function(error) {
-            console.error('Error sending email:', error);
-            // Optionally, show an error message using SweetAlert2 or other method
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong! Please try again later.',
-            });
-        });
-}
+//     // Send email using email.js
+//     emailjs.send("service_rrvovzs", "template_3hjisgx", params) // Replace with your actual Service ID and Template ID
+//         .then(function(response) {
+//             console.log('Email sent successfully!', response);
+//             // Optionally, show a success message using SweetAlert2 or other method
+//             Swal.fire({
+//                 icon: 'success',
+//                 title: 'Success!',
+//                 text: 'Your message has been sent.',
+//             });
+//             // Clear form fields
+//             document.getElementById('contactForm').reset();
+//         }, function(error) {
+//             console.error('Error sending email:', error);
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'Oops...',
+//                 text: 'Something went wrong! Please try again later.',
+//             });
+//         });
+// }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        },
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.testimonial-swiper', {
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 5000,
+        },
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});
+
 
 
 
@@ -244,5 +287,37 @@ $(document).ready(function(){
                 }
             }
         ]
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swiper
+    var swiper = new Swiper('.team-swiper', {
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 5000,
+        },
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // Modal handling for biographies
+    $('#bioModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var name = button.data('name');
+        var position = button.data('position');
+        var bio = button.data('bio');
+
+        var modal = $(this);
+        modal.find('.modal-title').text(name);
+        modal.find('#modal-name').text(name);
+        modal.find('#modal-position').text(position);
+        modal.find('#modal-bio').text(bio);
     });
 });

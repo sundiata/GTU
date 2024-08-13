@@ -36,6 +36,43 @@
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
+
+
+    <style>
+        /* Ensure the button has a fixed height */
+        .nav-link {
+            height: 100px; /* Adjust height as needed */
+            
+        }
+        /* Adjust the image container size */
+        .image-container {
+            width: 100%;
+            height: 350px; /* Fixed height */
+            position: relative;
+        }
+        .image-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-link h5 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .container {
+            max-width: 100%;
+        }
+        .service {
+            background-color: #f8f9fa;
+        }
+        .callback {
+            background-color: #e9ecef;
+        }
+        .footer {
+            background-color: #343a40;
+        }
+    </style>
     <!-- Spinner End -->
 
 
@@ -122,22 +159,29 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
-                <h1 class="display-5 mb-5">Awesome Financial Services For Business</h1>
+                <h1 class="display-5 mb-5">Financial Services</h1>
             </div>
+
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                    <div class="nav nav-pills d-flex flex-column w-100 h-100 me-4">
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Financial Service</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                             <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Salary Payment</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Auto and  Consumer Loans</h5>
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Auto and Consumer Loans</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Cash advance</h5>
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Islamic Micro-Finance</h5>
+                        </button>
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Pension Saving Accounts</h5>
+                        </button>
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Offering and Spouse Account</h5>
                         </button>
                     </div>
                 </div>
@@ -145,87 +189,106 @@
                     <div class="tab-content w-100">
                         <div class="tab-pane fade show active" id="tab-pane-1">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Keep saving accounts for members and the offspring's of members: The members' offspring scheme is to help member plan for their offspring's while they young.
-
-                                        Give financial credits to members: We offer loans to the members on the same day of application if the necessary requirements are meet by the member. These loans are; regular loans in the form of Schedule and Re-schedule loans, Sharia Loans for those who are not interested in conventional loans.</p>
-                                 
-                                
+                                    <p class="mb-4">
+                                        Keep saving accounts for members and the offspring's of members: The members' offspring scheme is to help members plan for their offspring while they are young.
+                                        Give financial credits to members: We offer loans to the members on the same day of application if the necessary requirements are met by the member. These loans are regular loans in the form of Schedule and Re-schedule loans, Sharia Loans for those who are not interested in conventional loans.
+                                    </p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-2">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Salary account holders receives their salary over the counter, where as those who did not hold salary accounts are meet in their various schools by Pay-Masters and Pay-Mistresses employed by the GTUCCU to pay them their salaries with no charges.
-
-                                        The GTUCCU also hold accounts for almost all the schools in the Gambia, ranging from Primary to Senior Secondary Schools where they have their Schools Improvement Grants sponsored (SIG) by the World Bank. We even hold accounts for Kindergartens and Nursery Schools as well.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <h3 class="mb-4">Streamlined Salary Payment Services</h3>
+                                    <p class="mb-4">
+                                        Members can transfer their salaries to be paid to GTCCU and we also open salary accounts for organized institutions within the common bond.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-3">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">GTUCCU also introduces new products under the Consumer Cooperative Unit to help members' tailor-make loans for specific purposes. The Consumer Cooperative Unit issue members' loans in kind.</p>
+                                    <h3 class="mb-4">Auto and Consumer Loans</h3>
+                                    <p class="mb-4">
+                                        GTUCCU introduces new products under the Consumer Cooperative Unit to help members tailor-make loans for specific purposes. The Consumer Cooperative Unit issues members' loans in kind.
+                                    </p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Motor Bikes</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Tablets</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Mobile phones</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Spare Parts for the motor bikes</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Plasma TV's sets -flat screens in different sizes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Mobile Phones</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Spare Parts for Motor Bikes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Plasma TVs - Flat Screens in Different Sizes</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Refrigerators</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Freezers</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Building Materials, and more</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Plots of land in estates called Teachers Village</p>
-
-
-
-
-
-
+                                    <p><i class="fa fa-check text-primary me-3"></i>Building Materials</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Plots of Land in Estates Called Teachers Village</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-4">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <h3 class="mb-4">Islamic Micro-Finance</h3>
+                                    <p class="mb-4">
+                                        Islamic credit union is also open for members to save and have access to loans based on Shariah and Islamic principles of credit union.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Pension Saving Accounts</h3>
+                                    <p class="mb-4">
+                                        Members can save a minimum of D200.00 monthly to plan for their retirement.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-6">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Offering and Spouse Accounts</h3>
+                                    <p class="mb-4">
+                                        Active members can open accounts for their spouses and children to save for them.
+                                    </p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
@@ -236,7 +299,6 @@
         </div>
     </div>
     <!-- Service End -->
-
 
     <!-- Callback Start -->
     <div class="container-fluid callback mt-5 py-5">
@@ -289,7 +351,6 @@
         </div>
     </div>
     <!-- Callback End -->
-        
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -297,8 +358,8 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kanifing  The  Gambia</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+220  3070701/p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kanifing, The Gambia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+220 3070701</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>keitajato30@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -320,7 +381,7 @@
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Terms & Conditions</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -336,21 +397,22 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Rights Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    Designed By <a class="border-bottom" href="#">sundiata</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Copyright End -->
+
+
     <!-- Copyright End -->
 
 
