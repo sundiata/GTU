@@ -74,6 +74,44 @@
     color: #0056b3; /* Change this to the hover color */
 }
 
+
+
+
+        /* Ensure the button has a fixed height */
+        .nav-link {
+            height: 100px; /* Adjust height as needed */
+            
+        }
+        /* Adjust the image container size */
+        .image-container {
+            width: 100%;
+            height: 350px; /* Fixed height */
+            position: relative;
+        }
+        .image-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-link h5 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .container {
+            max-width: 100%;
+        }
+        .service {
+            background-color: #f8f9fa;
+        }
+        .callback {
+            background-color: #e9ecef;
+        }
+        .footer {
+            background-color: #343a40;
+        }
+    
+
       
     </style>
 
@@ -158,54 +196,57 @@
                         </a>
                     </small>
                     
-                  <small style="font-size: large;" class="ms-4  text-white"><i class="fa fa-phone-alt text-primary me-2"></i>+220 3070701</small>
+                  <small style="font-size: large;" class="ms-4  text-white"><i class="fa fa-phone-alt text-primary me-2"></i>+220 3867386</small>
                 </div>
               </div>
             </div>
           </div>
-          <nav   class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    
-
-                </span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
+          <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-5 text-primary m-0">GTUCCU</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                  <a style="color: aliceblue; font-weight: bold; font-size: larger;" href="index.html" class="nav-item nav-link active">Home</a>
-                  <a  style="color: aliceblue; font-weight: bold; font-size: large;" href="about.html" class="nav-item nav-link">About</a>
-                  <a style="color: aliceblue; font-size: bold; font-size: large;" href="service.html" class="nav-item nav-link">Services</a>
-                  <div class="nav-item dropdown">
-                    <a style="color: aliceblue; font-size: bold; font-size: large;" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Departments</a>
-                    <div class="dropdown-menu border-light m-0">
-                      <a  href="operationDepartmet.html" class="dropdown-item">Operation Department</a>
-                      <a href="complianceDepart.html" class="dropdown-item">Compliance Department</a>
-                      <a href="humanResources.html" class="dropdown-item">Human Resources Department</a>
-                      <a href="audit.html" class="dropdown-item">Audit Department</a>
-                      <a href="records.html" class="dropdown-item">Records Department</a>
-                      <a href="consumer.html" class="dropdown-item">Consumer Unit</a>
-                      <a href="credit.html" class="dropdown-item">Credit Control</a>
-                      <a href="404.html" class="dropdown-item">ICT Department</a>
+                    <a style="color: aliceblue; font-weight: bold; font-size: larger;" href="index.html" class="nav-item nav-link active">Home</a>
+                    <a style="color: aliceblue; font-weight: bold; font-size: large;" href="about.html" class="nav-item nav-link">About</a>
+                    <a style="color: aliceblue; font-size: bold; font-size: large;"  href="service.html" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a  style="color: aliceblue; font-size: bold; font-size: large;"   href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Departments</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a   href="operationDepartmet.html" class="dropdown-item">Operation Department</a>
+                            <!-- <a  href="complianceDepart.html" class="dropdown-item">Compliance Department</a> -->
+                            <a  href="humanResources.html" class="dropdown-item">Human Resorces Department </a>
+                            <a  href="audit.html" class="dropdown-item">Audit Department</a>
+                            <!-- <a  href="records.html" class="dropdown-item">Records Department</a> -->
+                            <!-- <a  href="consumer.html" class="dropdown-item">Comsumer unit</a> -->
+                            <!-- <a  href="credit.html" class="dropdown-item">Credit Contral</a> -->
+
+
+
+
+                            <!-- <a  href="404.html" class="dropdown-item">ICT Department</a> -->
+                        </div>
                     </div>
-                  </div>
-                  <a style="color: aliceblue; font-size: bold; font-size: large;" href="dawnloads.html" class="nav-item nav-link">Downloads</a>
-                  <a style="color: aliceblue; font-size: bold; font-size: large;" href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a style="color: aliceblue; font-size: bold; font-size: large;" href="contact.html" class="nav-item nav-link">Dawnloads</a>
+
+                    <a style="color: aliceblue; font-size: bold; font-size: large;" href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                  <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                    <small class="fab fa-facebook-f text-primary"></small>
-                  </a>
-                  <!-- <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                    <small class="fab fa-twitter text-primary"></small>
-                  </a> -->
-                  <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                    <small class="fab fa-youtube text-primary"></small>
-                  </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <!-- <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a> -->
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-linkedin-in text-primary"></small>
+                    </a>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
           
     </div>  <!-- Navbar Start -->
   
@@ -436,95 +477,130 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
-                <h1 class="display-5 mb-5">Awesome Financial Services For Business</h1>
+                <h1 class="display-5 mb-5">Financial Services</h1>
             </div>
+
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Financial Planning</h5>
+                    <div class="nav nav-pills d-flex flex-column w-100 h-100 me-4">
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Financial Service</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Cash Investment</h5>
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Salary Payment</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Financial Consultancy</h5>
+                    
+                        <button class="nav-link d-flex align-items-center text-start border p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Islamic Micro-Finance</h5>
                         </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Business Loans</h5>
-                        </button>
+                   
+                          
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="tab-content w-100">
                         <div class="tab-pane fade show active" id="tab-pane-1">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/fservice.png" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <p class="mb-4">
+                                        Keep saving accounts for members and the offspring's of members: The members' offspring scheme is to help members plan for their offspring while they are young.
+                                        Give financial credits to members: We offer loans to the members on the same day of application if the necessary requirements are met by the member. These loans are regular loans in the form of Schedule and Re-schedule loans, Sharia Loans for those who are not interested in conventional loans.
+                                    </p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-2">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/fservice.png" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                    <h3 class="mb-4">Streamlined Salary Payment Services</h3>
+                                    <p class="mb-4">
+                                        Members can transfer their salaries to be paid to GTCCU and we also open salary accounts for organized institutions within the common bond.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-3">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/fservice.png" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <h3 class="mb-4">Auto and Consumer Loans</h3>
+                                    <p class="mb-4">
+                                        GTUCCU introduces new products under the Consumer Cooperative Unit to help members tailor-make loans for specific purposes. The Consumer Cooperative Unit issues members' loans in kind.
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Motor Bikes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Tablets</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Mobile Phones</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Spare Parts for Motor Bikes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Plasma TVs - Flat Screens in Different Sizes</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Refrigerators</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Freezers</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Building Materials</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Plots of Land in Estates Called Teachers Village</p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-4">
                             <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/gemniPrrofile.jpg"
-                                            style="object-fit: cover;" alt="">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/fservice.png" alt=""> <!-- Replace with appropriate image -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <h3 class="mb-4">Islamic Micro-Finance</h3>
+                                    <p class="mb-4">
+                                        Islamic credit union is also open for members to save and have access to loans based on Shariah and Islamic principles of credit union.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Pension Saving Accounts</h3>
+                                    <p class="mb-4">
+                                        Members can save a minimum of D200.00 monthly to plan for their retirement.
+                                    </p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-6">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="image-container">
+                                        <img src="img/gemniPrrofile.jpg" alt=""> <!-- Replace with appropriate image -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Offering and Spouse Accounts</h3>
+                                    <p class="mb-4">
+                                        Active members can open accounts for their spouses and children to save for them.
+                                    </p>
                                     <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
                                 </div>
                             </div>
