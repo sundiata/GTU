@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Finanza - Financial Services Website Template</title>
+    <title>GTUCCU</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,7 +29,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    
+    
 </head>
+
+
 
 <body>
     <!-- Spinner Start -->
@@ -137,29 +142,29 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
                 <h1 class="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
-                <form>
+                <form id="contactForm">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                 <label for="name">Your Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                 <label for="email">Your Email</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                 <label for="subject">Subject</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
@@ -168,6 +173,8 @@
                         </div>
                     </div>
                 </form>
+                
+                
             </div>
             <!-- Map Section -->
             <div   class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -274,6 +281,60 @@
         </div>
     </div>
     <!-- Copyright End -->
+
+
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("AfKF13SZhWNhfjLwT"); // Initialize EmailJS with your User ID
+        })();
+    
+        // Function to handle form submission
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value; // Correct id for email field
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
+            // Prepare email parameters
+            const params = {
+                to_email: 'keitajato30@gmail.com', // Receiver's email address
+                from_name: name,
+                from_email: email,
+                subject: subject,
+                message: message
+            };
+    
+            // Send email using EmailJS
+            emailjs.send("service_rb75ayh", "template_0jvppbq", params) // Replace with your actual Service ID and Template ID
+            .then(function(response) {
+                    console.log('Email sent successfully!', response);
+                    // Show success message
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Your message has been sent.',
+                    });
+                    // Clear form fields
+                    document.getElementById('contactForm').reset();
+                }, function(error) {
+                    console.error('Error sending email:', error);
+                    // Show error message
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong! Please try again later.',
+                    });
+                });
+        }
+    
+        // Attach event listener to the form
+        document.getElementById('contactForm').addEventListener('submit', sendEmail);
+    </script>
+    
 
 
     <!-- Back to Top -->
